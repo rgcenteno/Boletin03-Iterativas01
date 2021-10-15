@@ -1,0 +1,7 @@
+1. Realiza un programa que calcule la suma de los números pares comprendidos entre 20 y N.
+2. Realiza un algoritmo que calcule la suma de los N primeros números naturales.
+3. Escribir un programa que solicite un número y calcule la suma de sus dígitos.
+4. Escribe un programa que reciba un número entre 1 y 10 y muestre por pantalla la tabla de multiplicar.
+5. Realiza un programa que reciba un número por parámetro y nos diga si el número es primo o no.
+6. Escribe un programa que calcule el factorial de un número entero pasado como parámetro.
+7.Realiza un programa con un menú que vaya mostrando por pantalla el siguiente número de la secuencia de Fibonacci cada vez que se elija la opción 1. Cuando se elija la opción 2 el programa finaliza.
