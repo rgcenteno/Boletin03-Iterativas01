@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author rgcenteno
  */
-public class Boletín3 {
+public class Boletin3 {
 
     public static void main(String[] args){
         sumaParesProgram();
@@ -29,7 +29,8 @@ public class Boletín3 {
                 System.out.println("ERROR: Debe insertar un número natural.\n");
             }
             sc.nextLine();
-        }while(numUsuario < 0);
+        }
+        while(numUsuario < 0);
         
     }
     
