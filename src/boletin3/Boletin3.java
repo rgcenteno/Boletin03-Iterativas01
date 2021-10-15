@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package boletín3;
+package boletin3;
 
 import java.util.Scanner;
 
