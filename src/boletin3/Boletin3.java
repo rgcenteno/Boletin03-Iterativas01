@@ -14,10 +14,45 @@ import java.util.Scanner;
 public class Boletin3 {
 
     public static void main(String[] args){
-        sumaParesProgram();
+        //sumaParesProgram();
+        //Ejercicio2.sumaNumerosProgram();
+        
+        Scanner teclado = new Scanner(System.in);
+        String line;
+        do{
+            System.out.println("******************************************");
+            System.out.println("* 1. Suma pares                          *");
+            System.out.println("* 2. Suma números                        *");
+            System.out.println("* 3. Sumar cifras número                 *");
+            System.out.println("* 4. Es primo                            *");
+            System.out.println("*                                        *");
+            System.out.println("* 0. Salir                               *");
+            System.out.println("******************************************");
+            line = teclado.nextLine();
+            switch(line){
+                case "1":
+                    sumaParesProgram();
+                    break;
+                case "2":
+                    Ejercicio2.sumaNumerosProgram();
+                    break;
+                case "3":
+                    Ejercicio3.sumaCifrasProgram();
+                    break;
+                case "4":
+                    Ejercicio5.primoProgram();
+                    break;
+                case "0":
+                    break;
+                default:
+                    System.out.println("Opción incorrecta!");
+            }
+        }while(!line.equals("0"));
+        
     }
     
     public static void sumaParesProgram(){
+        /*
         Scanner sc = new Scanner(System.in);
         int numUsuario = -1;
         do{
@@ -30,7 +65,9 @@ public class Boletin3 {
             }
             sc.nextLine();
         }
-        while(numUsuario < 0);
+        while(numUsuario < 0);*/
+        //Esta línea se transforma en lo de arriba
+        int numUsuario = boletin3.utils.EntradaSalida.solicitarNumeroNatural("Por favor, inserte un número natural");
         System.out.println("El resultado es: " + sumaPares(numUsuario));
     }
     
@@ -49,6 +86,7 @@ public class Boletin3 {
             //Falta por hacer si es mayor
             if(n % 2 != 0){
                 n--;
+                n = n - 1;
             }
             int resultado = 0;
             for(int i = n; i >= 20; i -= 2){
