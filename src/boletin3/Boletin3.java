@@ -31,7 +31,7 @@ public class Boletin3 {
             sc.nextLine();
         }
         while(numUsuario < 0);
-        
+        System.out.println("El resultado es: " + sumaPares(numUsuario));
     }
     
     public static int sumaPares(int n){
@@ -47,7 +47,14 @@ public class Boletin3 {
         }
         else{
             //Falta por hacer si es mayor
-            return 0;
+            if(n % 2 != 0){
+                n--;
+            }
+            int resultado = 0;
+            for(int i = n; i >= 20; i -= 2){
+                resultado += i;
+            }
+            return resultado;
         }
     }
     
