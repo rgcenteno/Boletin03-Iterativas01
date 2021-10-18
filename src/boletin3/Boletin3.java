@@ -5,6 +5,7 @@
  */
 package boletin3;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 /**
@@ -24,7 +25,9 @@ public class Boletin3 {
             System.out.println("* 1. Suma pares                          *");
             System.out.println("* 2. Suma números                        *");
             System.out.println("* 3. Sumar cifras número                 *");
-            System.out.println("* 4. Es primo                            *");
+            System.out.println("* 4. Tabla de multiplicar                *");
+            System.out.println("* 5. Es primo                            *");
+            System.out.println("* 6. Es primo (versión 2)                *");
             System.out.println("*                                        *");
             System.out.println("* 0. Salir                               *");
             System.out.println("******************************************");
@@ -40,7 +43,13 @@ public class Boletin3 {
                     Ejercicio3.sumaCifrasProgram();
                     break;
                 case "4":
-                    Ejercicio5.primoProgram();
+                    Ejercicio4.tablaMultiplicarProgram();
+                    break;
+                case "5":
+                    Ejercicio5.primoProgram(1);
+                    break;
+                case "6":
+                    Ejercicio5.primoProgram(2);
                     break;
                 case "0":
                     break;
@@ -48,7 +57,7 @@ public class Boletin3 {
                     System.out.println("Opción incorrecta!");
             }
         }while(!line.equals("0"));
-        
+      
     }
     
     public static void sumaParesProgram(){

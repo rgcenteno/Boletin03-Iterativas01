@@ -18,7 +18,7 @@ public class Ejercicio2 {
         System.out.println("El resultado es: " + sumaNumeros(numUsuario));        
     }
     
-    public static int sumaNumeros(int n){
+    private static int sumaNumeros(int n){
         int resultado = 0;
         for(int i = 1; i <= n; i++){
             resultado += i; //resultado = resultado + i;

@@ -24,7 +24,7 @@ public class Ejercicio3 {
         return resultado;
     }
     
-    public static int sumaCifrasWhile(int n){
+    private static int sumaCifrasWhile(int n){
         int resultado = 0;
         while(n > 0){
             resultado += n % 10;

@@ -24,11 +24,15 @@ public class Ejercicio4 {
             teclado.nextLine();
         }
         while(numUsuario < 1 || numUsuario > 10);
-        
+        System.out.println("Tabla de multiplicar del número " + numUsuario);
+        System.out.println(tablaMultiplicar(numUsuario));
     }
     
-    public static String tablaMultiplicar(int n){
-        //for
-        return "";
+    private static String tablaMultiplicar(int n){
+        String res = "";
+        for (int i = 1; i <= 10; i++) {
+            res += String.format("%d x %d = %d\n", n, i, n * i);
+        }
+        return res;
     }
 }

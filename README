@@ -4,4 +4,7 @@
 4. Escribe un programa que reciba un número entre 1 y 10 y muestre por pantalla la tabla de multiplicar.
 5. Realiza un programa que reciba un número por parámetro y nos diga si el número es primo o no.
 6. Escribe un programa que calcule el factorial de un número entero pasado como parámetro.
-7.Realiza un programa con un menú que vaya mostrando por pantalla el siguiente número de la secuencia de Fibonacci cada vez que se elija la opción 1. Cuando se elija la opción 2 el programa finaliza.
+7. Realiza un programa con un menú que vaya mostrando por pantalla el siguiente número de la secuencia de Fibonacci cada vez que se elija la opción 1. Cuando se elija la opción 2 el programa finaliza.
+8. Una persona desea invertir su dinero en un banco, el cual le otorga un 2% de interés anual pagaderos mensualmente. Haz un programa que solicite la inversión y el número de años en los que mantendrá la inversión. Calcula cual será la cantidad de dinero que esta persona tendrá al finalizar el periodo si la ganancia de cada mes es reinvertida.
+9. [Opcional] Comprobar si un número es palíndromo (Se lee igual de adelante hacia atrás que de atrás hacia adelante).
+10. [Opcional] Solicita el día, mes y año de nacimiento de un persona. Calcula el número de días que la persona ha vivido hasta hoy teniendo en cuenta los años bisiestos. Puedes obtener los datos de la fecha actual con estas líneas:
