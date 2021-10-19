@@ -5,7 +5,6 @@
  */
 package boletin3;
 
-import java.util.Calendar;
 import java.util.Scanner;
 
 /**
