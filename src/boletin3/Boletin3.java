@@ -30,6 +30,7 @@ public class Boletin3 {
             System.out.println("* 7. Calcular factorial                  *");
             System.out.println("* 8. Fibonacci                           *");
             System.out.println("* 9. Cálculo inversión                   *");
+            System.out.println("* 10. Números de Armstrong               *");
             System.out.println("*                                        *");
             System.out.println("* 0. Salir                               *");
             System.out.println("******************************************");
@@ -61,6 +62,9 @@ public class Boletin3 {
                     break;
                 case "9":
                     Ejercicio8.inversionProgram();
+                    break;
+                case "10":
+                    Ejercicio11.numerosArmstrongProgram();
                     break;
                 case "0":
                     break;

@@ -30,7 +30,32 @@ public class Ejercicio11 {
             teclado.nextLine();
         }
         while(numerosACalcular <= 0);
-        
+        if(numerosACalcular > 20){
+            System.out.println("Con valores superiores a 20 el algoritmo puede tardar bastante\nCalculando...");
+        }
+        //Ahora ya podemos trabajar. Vamos a ir recorriendo números sucesivos hasta que encontremos los números que nos han solicitado.
+        System.out.println(getPrimerosNumArmstrong(numerosACalcular));
+    }
+    
+    /**
+     * Calcula los primeros n números de Armstrong 
+     * @param cuantos Cuantos números queremos calcular
+     * @return String con los n primeros números de Armstrong
+     */    
+    private static String getPrimerosNumArmstrong(int cuantos){
+        int encontrados = 0;
+        String resultado = ""; //Aquí almacenaremos los números encontrados. Cuando conozcamos los arrays, éstos serán una opción mejor pero de momento usamos esto.
+        long i;
+        for(i = 1; encontrados < cuantos && i < Long.MAX_VALUE; i++){
+            if(esArmstrong(i)){
+                encontrados++;
+                resultado += i + " ";
+            }
+        } 
+        if(i == Long.MAX_VALUE){
+            resultado += "\nNos hemos acabado los números sin encontrar más números de Armstrong";
+        }
+        return resultado;
     }
     
     /**
@@ -38,7 +63,7 @@ public class Ejercicio11 {
      * @param num Número del que queremos comprobar el número de cifras
      * @return Número de cifras que conforman el número.
      */
-    public static int getNumCifras(long num){        
+    private static int getNumCifras(long num){        
         int longitud = 0;
         for(int i = 1; i <= num; i = i*10){
             longitud++;            
@@ -51,11 +76,11 @@ public class Ejercicio11 {
      * @param num Número a comprobar
      * @return true si lo es, falso en otro caso
      */
-    public static boolean esArmstrong(int num){
-        int resultado = 0;
+    private static boolean esArmstrong(long num){
+        long resultado = 0;
         int numCifras = getNumCifras(num);
         for(int i = 1; i <= num; i = i*10){
-            int cifra = (num / i) % 10;
+            long cifra = (num / i) % 10;
             resultado += java.lang.Math.pow(cifra, numCifras);
         }
         return resultado == num;
