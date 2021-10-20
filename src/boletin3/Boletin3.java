@@ -29,6 +29,7 @@ public class Boletin3 {
             System.out.println("* 6. Es primo (versión 2)                *");
             System.out.println("* 7. Calcular factorial                  *");
             System.out.println("* 8. Fibonacci                           *");
+            System.out.println("* 9. Cálculo inversión                   *");
             System.out.println("*                                        *");
             System.out.println("* 0. Salir                               *");
             System.out.println("******************************************");
@@ -57,6 +58,9 @@ public class Boletin3 {
                     break;
                 case "8":
                     Ejercicio7.fibonacciProgram();
+                    break;
+                case "9":
+                    Ejercicio8.inversionProgram();
                     break;
                 case "0":
                     break;
