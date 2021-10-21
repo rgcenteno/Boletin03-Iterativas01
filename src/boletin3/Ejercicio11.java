@@ -21,7 +21,7 @@ public class Ejercicio11 {
             if(teclado.hasNextInt()){
                 numerosACalcular = teclado.nextInt();
                 if(numerosACalcular <= 0){
-                    System.out.println("Debe solicitar al menos un año.");
+                    System.out.println("Debe solicitar al menos un número.");
                 }
             }
             else{
